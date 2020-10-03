@@ -1,4 +1,4 @@
-//20131872 È²ÀçÇü
+//20131872 í™©ìž¬í˜•
 #include <iostream>
 using namespace std;
 
@@ -9,49 +9,49 @@ struct matrix{
 };
 int main(){
 	matrix A, B, C;
-	cout << "AÀÇ ¿­ÀÇ °³¼ö A.n°ú BÀÇ ÇàÀÇ °³¼öB.nÀÌ ÀÏÄ¡ÇÏ¿©¾ß C°¡ °è»êµÇ¾îÁú ¼ö ÀÖ´Ù." << endl;
+	cout << "Aì˜ ì—´ì˜ ê°œìˆ˜ A.nê³¼ Bì˜ í–‰ì˜ ê°œìˆ˜B.nì´ ì¼ì¹˜í•˜ì—¬ì•¼ Cê°€ ê³„ì‚°ë˜ì–´ì§ˆ ìˆ˜ ìžˆë‹¤." << endl;
 	cout << "***********************************" << endl;
-	cout << "Çà·Ä AÀÇ ÇàÀÇ °³¼ö´Â? ";	cin >> A.m;
-	cout << "Çà·Ä AÀÇ ¿­ÀÇ °³¼ö´Â? "; cin >> A.n;
+	cout << "í–‰ë ¬ Aì˜ í–‰ì˜ ê°œìˆ˜ëŠ”? ";	cin >> A.m;
+	cout << "í–‰ë ¬ Aì˜ ì—´ì˜ ê°œìˆ˜ëŠ”? "; cin >> A.n;
 	A.p = new float*[A.m];
 	for (int i = 0; i < A.m; i++){
 		A.p[i] = new float[A.n];
 	}
 	for (int i = 0; i < A.m; i++){
 		for (int j = 0; j < A.n; j++){
-			cout << "AÇà·ÄÀÇ" << i + 1 << "Çà" << j + 1 << "¿­ÀÇ Ç×Àº?  ";
+			cout << "Aí–‰ë ¬ì˜" << i + 1 << "í–‰" << j + 1 << "ì—´ì˜ í•­ì€?  ";
 			cin >> A.p[i][j];
 		}
 	}
-	cout << "Çà·Ä A´Â? " << endl;
+	cout << "í–‰ë ¬ AëŠ”? " << endl;
 	for (int i = 0; i < A.m; i++){
 		for (int j = 0; j < A.n; j++){
 			cout << A.p[i][j] << " ";
 		}cout << endl;
 	}
 	cout << "***********************************" << endl;
-	cout << "Çà·Ä BÀÇ ÇàÀÇ °³¼ö´Â? ";	cin >> B.m;
-	cout << "Çà·Ä BÀÇ ¿­ÀÇ °³¼ö´Â? "; cin >> B.n;
+	cout << "í–‰ë ¬ Bì˜ í–‰ì˜ ê°œìˆ˜ëŠ”? ";	cin >> B.m;
+	cout << "í–‰ë ¬ Bì˜ ì—´ì˜ ê°œìˆ˜ëŠ”? "; cin >> B.n;
 	B.p = new float*[B.m];
 	for (int i = 0; i < B.m; i++){
 		B.p[i] = new float[B.n];
 	}
 	for (int i = 0; i < B.m; i++){
 		for (int j = 0; j < B.n; j++){
-			cout << "BÇà·ÄÀÇ" << i + 1 << "Çà" << j + 1 << "¿­ÀÇ Ç×Àº?  ";
+			cout << "Bí–‰ë ¬ì˜" << i + 1 << "í–‰" << j + 1 << "ì—´ì˜ í•­ì€?  ";
 			cin >> B.p[i][j];
 		}
 	}
-	cout << "Çà·Ä B´Â? " << endl;
+	cout << "í–‰ë ¬ BëŠ”? " << endl;
 	for (int i = 0; i < B.m; i++){
 		for (int j = 0; j < B.n; j++){
 			cout << B.p[i][j] << " ";
 		}cout << endl;
 	}
 	cout << "***********************************" << endl;
-	cout << "C=A*BÀÌ¸ç, AÀÇ ¿­ÀÇ °³¼ö A.n°ú BÀÇ ÇàÀÇ °³¼öB.nÀÌ ÀÏÄ¡ÇÏ¿©¾ß ÇÑ´Ù." << endl;
-	cout << "CÇà·ÄÀÇ Çà °³¼ö´Â? " << A.m << endl;
-	cout << "CÇà·ÄÀÇ ¿­ °³¼ö´Â? " << B.n << endl;
+	cout << "C=A*Bì´ë©°, Aì˜ ì—´ì˜ ê°œìˆ˜ A.nê³¼ Bì˜ í–‰ì˜ ê°œìˆ˜B.nì´ ì¼ì¹˜í•˜ì—¬ì•¼ í•œë‹¤." << endl;
+	cout << "Cí–‰ë ¬ì˜ í–‰ ê°œìˆ˜ëŠ”? " << A.m << endl;
+	cout << "Cí–‰ë ¬ì˜ ì—´ ê°œìˆ˜ëŠ”? " << B.n << endl;
 	C.p = new float*[A.m];
 	for (int i = 0; i < A.m; i++)
 	{
@@ -66,7 +66,7 @@ int main(){
 		}
 	}
 
-	cout << "Çà·Ä CÀÇ °ªÀº?" << endl;
+	cout << "í–‰ë ¬ Cì˜ ê°’ì€?" << endl;
 	for (int i = 0; i < A.m; i++){
 		for (int j = 0; j < B.n; j++){
 			cout << C.p[i][j] << " ";

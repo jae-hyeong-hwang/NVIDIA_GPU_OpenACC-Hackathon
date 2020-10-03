@@ -1,4 +1,4 @@
-//20131872 È²ÀçÇü_final project
+//20131872 ÃˆÂ²Ã€Ã§Ã‡Ã¼_final project
 #include<iostream>
 #include<fstream>
 using namespace std;
@@ -204,7 +204,7 @@ void ship::compute_volume() {
 		double unit_norm_x = sx / area_i;
 		double unit_norm_y = sy / area_i;
 		double unit_norm_z = sz / area_i;
-		// ´ÜÀ§º¤ÅÍ (unit normal vector)
+		// Â´ÃœÃ€Â§ÂºÂ¤Ã…Ã (unit normal vector)
 		// let's set F vector as  <x/3,y/3,z/3>
 		double quadra_x;
 		double quadra_y;

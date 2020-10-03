@@ -11,14 +11,14 @@ void point::set_value(double a, double b) {
 	x = a; y = b;
 }
 
-void point::translate(double a, double b) {// ÀÔ·Â¹ŞÀº a°ª, b°ªÀ¸·ÎºÎÅÍ x ÁÂÇ¥¸¦ a¸¸Å­, yÁÂÇ¥¸¦ b¸¸Å­ ÀÌµ¿
+void point::translate(double a, double b) {// ì…ë ¥ë°›ì€ aê°’, bê°’ìœ¼ë¡œë¶€í„° x ì¢Œí‘œë¥¼ aë§Œí¼, yì¢Œí‘œë¥¼ bë§Œí¼ ì´ë™
 	cout << "translate " << a << " from x coordinate and";	x = a + x;
 	cout << " translate " << b << " from y coordinate is" << endl;	y = y + b;
 }
 void point::rotate(double angle /* degree */) {
-	// xÁÂÇ¥¿Í yÁÂÇ¥°¡ ÀÌ·ç´Â °¢À» theta¶ó°í Á¤ÀÇÇÏ°í, angle¸¸Å­ ÀÌµ¿ÇÒ °æ¿ì,
-	// ¿øÁÖÁÂÇ¥°è¿¡¼­ »çÀÕ°¢ÀÌ theta+angleÀÎ ºÎÃ¤²Ã·Î »ı°¢ÇÏ¿©, ÀÌµ¿½ÃÅ² ÁÂÇ¥ÀÇ °ªÀ» ±¸ÇÑ´Ù.
-	// ¹İÁö¸§ÀÌ root(x^2+y^2)ÀÎ ¿øÀ¸·Î »ı°¢ÇÑ´Ù.
+	// xì¢Œí‘œì™€ yì¢Œí‘œê°€ ì´ë£¨ëŠ” ê°ì„ thetaë¼ê³  ì •ì˜í•˜ê³ , angleë§Œí¼ ì´ë™í•  ê²½ìš°,
+	// ì›ì£¼ì¢Œí‘œê³„ì—ì„œ ì‚¬ì‡ê°ì´ theta+angleì¸ ë¶€ì±„ê¼´ë¡œ ìƒê°í•˜ì—¬, ì´ë™ì‹œí‚¨ ì¢Œí‘œì˜ ê°’ì„ êµ¬í•œë‹¤.
+	// ë°˜ì§€ë¦„ì´ root(x^2+y^2)ì¸ ì›ìœ¼ë¡œ ìƒê°í•œë‹¤.
 	double pi = atan(1.0) * 4.0;
 	angle = angle*pi / 180.0;
 	double theta = atan(y / x);

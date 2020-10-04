@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-//20131872 È²ÀçÇü
+//20131872 í™©ìž¬í˜•
 
 void read_A(double A[2][2]);
 void inv_2x2(double A[2][2], double Ai[2][2]);
@@ -21,7 +21,7 @@ void read_A(double A[2][2]){
 	{
 		for (j = 0; j < 2; j++)
 		{
-			cout << "AÇà·ÄÀÇ" << i + 1 << "Çà " << j + 1 << "¿­Àº?" << endl;
+			cout << "Aí–‰ë ¬ì˜" << i + 1 << "í–‰ " << j + 1 << "ì—´ì€?" << endl;
 			cin >> A[i][j];
 		}
 	}
@@ -73,5 +73,5 @@ void check_inv(double A[2][2], double Ai[2][2])
 		}
 		cout << endl;
 	}
-	cout << "Çà·ÄA¿Í ¿ªÇà·Ä inverse AÀÇ °öÀº EÀÌ´Ù." << endl;
+	cout << "í–‰ë ¬Aì™€ ì—­í–‰ë ¬ inverse Aì˜ ê³±ì€ Eì´ë‹¤." << endl;
 }

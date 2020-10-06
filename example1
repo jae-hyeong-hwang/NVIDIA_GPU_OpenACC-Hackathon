@@ -1,4 +1,4 @@
-//20131872 È²ÀçÇü
+//20131872 í™©ì¬í˜•
 #include<iostream>
 using namespace std;
 struct student
@@ -10,7 +10,7 @@ struct student
 int main()
 {
 	student a;
-	cout << "structure array studentÀÇ Å©±â´Â" << sizeof(a) << "byteÀÌ´Ù" << endl;
+	cout << "structure array studentì˜ í¬ê¸°ëŠ”" << sizeof(a) << "byteì´ë‹¤" << endl;
 	int i;
 	for (i = 0; i < 10; i++)
 	{
@@ -24,8 +24,8 @@ int main()
 	{
 		sum = sum + a.weight[i];
 	};
-	cout <<"ÇĞ»ıµéÀÇ ¸ö¹«°ÔÀÇ ÃÑ ÇÕÀº"<< sum<<"kgÀÌ´Ù." << endl;
+	cout <<"í•™ìƒë“¤ì˜ ëª¸ë¬´ê²Œì˜ ì´ í•©ì€"<< sum<<"kgì´ë‹¤." << endl;
 	float avg = sum / 10;
-	cout << "ÇĞ»ıµéÀÇ ¸ö¹«°Ô(kg)ÀÇ Æò±ÕÀº " << avg <<"kgÀÌ´Ù."<< endl;
+	cout << "í•™ìƒë“¤ì˜ ëª¸ë¬´ê²Œ(kg)ì˜ í‰ê· ì€ " << avg <<"kgì´ë‹¤."<< endl;
 	return 0;
 }
